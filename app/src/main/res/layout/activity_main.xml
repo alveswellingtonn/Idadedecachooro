@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00b9d5"
+    tools:context="idadedecachorro.cursoandroid.com.idadedecachooro.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="258dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/tipoRacaId"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cachorro" />
+
+    <EditText
+        android:id="@+id/caixatextoid"
+        android:layout_width="265dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/botaoTipoRacaId"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="198dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="4dp"
+        android:background="#43a5c6"
+        android:padding="15dp"
+        android:text="Escreva a idade do cachorro para descobrir a idade dele em anos humanos"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/caixatextoid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/bota0idadeid"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/descobrir_idade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTipoRacaId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <TextView
+        android:id="@+id/resultadoidadeid"
+        android:layout_width="302dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="17dp"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/texto_idade_cachorro"
+        app:layout_constraintBottom_toTopOf="@+id/tipoRacaId"
+        app:layout_constraintEnd_toEndOf="@+id/bota0idadeid"
+        app:layout_constraintStart_toEndOf="@+id/bota0idadeid"
+        app:layout_constraintTop_toBottomOf="@+id/botaoTipoRacaId" />
+
+    <Button
+        android:id="@+id/botaoTipoRacaId"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="29dp"
+        android:text="Tipos de raças"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoidadeid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bota0idadeid"
+        app:layout_constraintTop_toBottomOf="@+id/caixatextoid" />
+
+    <TextView
+        android:id="@+id/tipoRacaId"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/texto_tipo_raca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</android.support.constraint.ConstraintLayout>
